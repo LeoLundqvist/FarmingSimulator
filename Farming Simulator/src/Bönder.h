@@ -1,5 +1,10 @@
 class Bönder
 {
+public:
+	int getBudget()
+	{
+		return budget;
+	};
 
 private:
 	int budget = 1000;
