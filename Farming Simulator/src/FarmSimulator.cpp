@@ -1,5 +1,4 @@
 #include "FarmSimulator.h"
-#include "Bönder.h"
 #include "Djur.h"
 
 Sheep sheep;

@@ -1,4 +1,6 @@
 #pragma once
+#include "Farmer.h"
+
 class Sheep
 {
 public:
@@ -9,6 +11,10 @@ public:
 	int getLegs()
 	{
 		return legs;
+	}
+	int buyAnimal()
+	{
+		//if budget lower than kostnad then no, else newBudget=getBudget - kostnad 
 	}
 
 private:

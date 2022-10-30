@@ -21,7 +21,7 @@ public:
 	{
 		return chickenAmount;
 	};
-
+	
 private:
 	int budget = 1000;
 	int sheepAmount = 0;
