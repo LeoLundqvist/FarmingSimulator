@@ -10,6 +10,7 @@ public:
 	{
 		return legs;
 	}
+
 private:
 	int kostnad = 100;
 	int legs = 4;
