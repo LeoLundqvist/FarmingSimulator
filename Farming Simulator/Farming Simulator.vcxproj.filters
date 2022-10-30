@@ -26,7 +26,7 @@
     <ClInclude Include="src\FarmSimulator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Bönder.h">
+    <ClInclude Include="src\Farmer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\Djur.h">
