@@ -8,6 +8,7 @@ Chicken chicken;
 
 void FarmSimulator::Run()
 {
+	
 
 	int input = 0;
 	while (true)
@@ -60,13 +61,13 @@ void FarmSimulator::Buy()
 		sheep.buyAnimal(amountOfAnimals);
 		break;
 	case 2:
-		sheep.buyAnimal(amountOfAnimals);
+		pig.buyAnimal(amountOfAnimals);
 		break;
 	case 3:
-		sheep.buyAnimal(amountOfAnimals);
+		cow.buyAnimal(amountOfAnimals);
 		break;
 	case 4:
-		sheep.buyAnimal(amountOfAnimals);
+		chicken.buyAnimal(amountOfAnimals);
 		break;
 	}
 	
