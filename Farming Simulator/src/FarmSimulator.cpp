@@ -54,6 +54,11 @@ void FarmSimulator::Buy()
 	std::cout << "How many would you like to buy?";
 	std::cin >> amountOfAnimals;
 
+	if(whichAnimal == 1)
+	{
+		sheep.buyAnimal(amountOfAnimals);
+	}
+
 }
 void FarmSimulator::Sell()
 {
