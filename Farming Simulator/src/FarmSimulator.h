@@ -7,7 +7,7 @@ public:
 	void Run();
 	void Buy();
 	void Sell();
-	void AmountOfAnimals();
+	void CheckInventory();
 	void Facts();
 
 };

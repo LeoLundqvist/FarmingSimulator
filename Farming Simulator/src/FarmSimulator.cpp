@@ -15,8 +15,8 @@ void FarmSimulator::Run()
 		std::cout << "FarmSimulator\n";
 		std::cout << "1. Buy animal\n";
 		std::cout << "2. Sell animal\n";
-		std::cout << "3. Look at amount of animals you own\n";
-		std::cout << "4. Fun facts about animals\n";
+		std::cout << "3. Check inventory\n";
+		std::cout << "4. Facts about animals\n";
 		std::cin >> input;
 
 		switch (input)
@@ -30,7 +30,7 @@ void FarmSimulator::Run()
 			break;
 
 		case 3:
-			AmountOfAnimals();
+			CheckInventory();
 			break;
 
 		case 4:
@@ -44,28 +44,46 @@ void FarmSimulator::Buy()
 {
 	int whichAnimal = 0;
 	int amountOfAnimals = 0;
-	std::cout << "Which animal would you like to buy?";
-	std::cout << "1. Pig";
-	std::cout << "2. 'Chicken";
-	std::cout << "3. Sheep";
-	std::cout << "4. Cow";
+	std::cout << "Which animal would you like to buy?\n";
+	std::cout << "1. Sheep\n";
+	std::cout << "2. Pig\n";
+	std::cout << "3. Cow\n";
+	std::cout << "4. Chicken\n";
 	std::cin >> whichAnimal;
 
-	std::cout << "How many would you like to buy?";
+	std::cout << "How many would you like to buy?\n";
 	std::cin >> amountOfAnimals;
 
-	if(whichAnimal == 1)
+	switch (whichAnimal)
 	{
+	case 1:
 		sheep.buyAnimal(amountOfAnimals);
+		break;
+	case 2:
+		sheep.buyAnimal(amountOfAnimals);
+		break;
+	case 3:
+		sheep.buyAnimal(amountOfAnimals);
+		break;
+	case 4:
+		sheep.buyAnimal(amountOfAnimals);
+		break;
 	}
+	
+	
 
 }
 void FarmSimulator::Sell()
 {
 
 }
-void FarmSimulator::AmountOfAnimals()
+void FarmSimulator::CheckInventory()
 {
+	std::cout << "Your bankaccount in kr: " << farmer.getBudget() << "\n";
+	std::cout << "Amount of Sheep: " << farmer.getSheepAmount() << "\n";
+	std::cout << "Amount of Pigs: " << farmer.getPigAmount() << "\n";
+	std::cout << "Amount of Cows: " << farmer.getCowAmount() << "\n";
+	std::cout << "Amount of Chickens: " << farmer.getChickenAmount() << "\n";
 
 }
 void FarmSimulator::Facts()
